@@ -1,183 +1,232 @@
 # DCA Investment Project
 
-本專題比較 3 種 DCA 延伸策略於 3 個市場之長期表現，並採用 `Expanding Yearly Walk-Forward`（2006 年起、以前一年資料校準、當年固定參數）進行回測。
+本專案是一個以 **定期定額（Dollar-Cost Averaging, DCA）策略比較與回測** 為核心的研究型專案，針對三大市場（TAIEX、S&P 500、Nikkei 225）進行資料抓取、策略校準、績效評估與視覺化輸出。
 
-## 作業繳交對照
+---
 
-### 1) 結構化資料儲存（CSV / Excel）與來源標註
+## 使用程式語言
 
-- 清理後主資料（CSV，已完成日期對齊、欄位統一與缺值處理）
-  - `data/taiex_price.csv`
-  - `data/sp500_price.csv`
-  - `data/nikkei225_price.csv`
-  - `data/fundamentals/taiex_fundamental.csv`
-  - `data/fundamentals/sp500_fundamental.csv`
-  - `data/fundamentals/nikkei225_fundamental.csv`
-- TAIEX 原始月報中介檔（Excel）
-  - `data/twse_c02001_monthly/output/本益比_PE_大盤_每月_2006-2026.xlsx`
-  - `data/twse_c02001_monthly/output/股價淨值比_PB_大盤_每月_2006-2026.xlsx`
-  - `data/twse_c02001_monthly/output/殖利率_大盤_每月_2006-2026.xlsx`
-- 資料來源說明
-  - TAIEX：TWSE C02001
-  - SP500：multpl.com
-  - Nikkei225：Nikkei Indexes
-  - 價格：Yahoo Finance
+- **主要語言**：Python（核心策略、資料抓取、回測與視覺化皆以 Python 撰寫）
+- **輔助腳本語言**：Bash（`run.sh` 啟動腳本）
+- **執行環境常見指令介面**：PowerShell（Windows 使用者）
 
-### 2) 程式碼繳交（Python 原始碼、結構清楚、含必要註解）
+---
 
-- 主要程式碼路徑
-  - `scripts/scrapers/`：資料抓取
-  - `scripts/analysis/`：策略與指標實作
-  - `scripts/experiments/walkforward_yearly_calibration.py`：年度滾動校準
-  - `scripts/visualization/plot_charts.py`：圖表與摘要輸出
-  - `scripts/run_analysis.py`：整體流程入口
+## 專案目標
 
-### 3) 資料檔繳交（各市場清理後資料；含整合檔）
+- 建立可重現的 DCA 策略研究流程（資料抓取 -> 回測 -> 評估 -> 圖表）。
+- 比較三種策略在不同市場的長期績效與風險表現。
+- 使用估值因子（PE/PB/殖利率）驅動投入倍率，模擬實務中「便宜多買、昂貴少買」行為。
+- 透過年度 Walk-Forward 校準，降低參數 overfitting 風險。
 
-- 每市場清理後基本面
-  - `data/fundamentals/taiex_fundamental.csv`
-  - `data/fundamentals/sp500_fundamental.csv`
-  - `data/fundamentals/nikkei225_fundamental.csv`
-- 每市場價格資料
-  - `data/taiex_price.csv`
-  - `data/sp500_price.csv`
-  - `data/nikkei225_price.csv`
-- 合併後總整理（跨市場、跨策略曲線）
-  - `results/performance/walkforward_expanding_curves.csv`
-  - `results/performance/walkforward_expanding_3strategies.csv`
+---
 
-### 4) 圖表繳交（至少三類圖表，標示清楚）
+## 核心功能
 
-執行以下指令可重現圖表輸出：
+- 自動抓取三大市場價格資料（Yahoo Finance）。
+- 抓取/整理三市場基本面資料（台股 TWSE/Goodinfo、S&P500、Nikkei225）。
+- 執行三種 DCA 策略：
+  - Value Averaging（價值平均）
+  - Model-Driven DCA（模型驅動）
+  - Threshold DCA（門檻分位）
+- 年度 expanding walk-forward 參數校準。
+- 輸出：
+  - 策略逐期明細（投入、持股、資產值、報酬）
+  - 績效摘要（報酬、CAGR、Sharpe、Sortino、Max Drawdown）
+  - Walk-forward 曲線與參數日誌
+  - 比較圖表
 
-```bash
-python3 scripts/visualization/plot_charts.py
-```
+---
 
-圖表輸出於 `figures/`，包含：
+## 技術棧與依賴
 
-- 價格走勢圖
-  - `figures/1_price_trend.png`
-- 累積投入與投資組合價值比較圖
-  - `figures/2_dca_TAIEX.png`
-  - `figures/2_dca_SP500.png`
-  - `figures/2_dca_Nikkei225.png`
-- 最終績效比較圖
-  - `figures/3_performance_comparison.png`
+### 語言與主要函式庫
 
-## 策略比較範圍
+- Python 3.10+（建議）
+- pandas、numpy：資料清理與計算
+- matplotlib：視覺化
+- yfinance：市場價格資料
+- requests、beautifulsoup4、lxml：網頁資料擷取
+- playwright、cloudscraper：動態頁/反爬備援
+- openpyxl：Excel 讀寫（TWSE xlsx）
 
-1. `Value Averaging`
-2. `Model-Driven DCA`
-3. `Threshold DCA (3factor)`
-
-## 市場與資料來源說明
-
-1. 價格資料（Yahoo Finance）
-- `TAIEX`: `^TWII`
-- `SP500`: `^GSPC`
-- `Nikkei225`: `^N225`
-
-2. 基本面資料
-- `TAIEX`: TWSE C02001 月報（PE / PB / DividendYield）
-- `SP500`: multpl.com（PE / PB / DividendYield）
-- `Nikkei225`: Nikkei Indexes（PE / DividendYield，可含 PB）
-
-## 重現流程（建議執行順序）
-
-1. 安裝套件
+安裝依賴：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. 抓資料（價格 + 基本面）
+若要使用 Playwright 相關流程，請額外安裝瀏覽器：
 
 ```bash
-python3 scripts/scrapers/run_all.py
+python -m playwright install
 ```
 
-3. 產生結果（先執行 yearly walk-forward，再輸出表格與圖）
+---
 
-```bash
-python3 scripts/visualization/plot_charts.py
-```
-
-4. 一次跑完整流程（爬蟲 + 結果）
-
-```bash
-python3 scripts/run_analysis.py
-```
-
-## TAIEX 前置資料說明
-
-`import_taiex_from_twse_xlsx.py` 會讀取下列三份檔案（預設 `data/twse_c02001_monthly/output/`）：
-
-- `本益比_PE_大盤_每月_2006-2026.xlsx`
-- `股價淨值比_PB_大盤_每月_2006-2026.xlsx`
-- `殖利率_大盤_每月_2006-2026.xlsx`
-
-若需重建上述三份 xlsx，請執行：
-
-```bash
-python3 scripts/scrapers/build_twse_monthly_valuation.py
-```
-
-## 核心流程說明
-
-1. `scripts/experiments/walkforward_yearly_calibration.py`
-- 每個測試年 `y`
-- 校準窗使用 `2006-01-01 ~ (y-1)-12-31`（expanding window）
-- 找到該年最佳參數後，固定套用到 `y` 年所有月份
-
-2. `scripts/visualization/plot_charts.py`
-- 呼叫 walk-forward 並輸出績效 CSV
-- 產出價格圖、DCA 比較圖、績效比較圖
-
-## 主要輸出
-
-1. 績效與參數（`results/performance/`）
-- `walkforward_expanding_3strategies.csv`
-- `walkforward_expanding_param_log.csv`
-- `walkforward_expanding_curves.csv`
-- `performance_summary_3strategies_3factor.csv`
-- `performance_summary_3strategies_3factor_with_sharpe_rank.csv`
-
-2. 圖表（`figures/`）
-- `1_price_trend.png`
-- `2_dca_TAIEX.png`
-- `2_dca_SP500.png`
-- `2_dca_Nikkei225.png`
-- `3_performance_comparison.png`
-
-## 專案目錄摘要
+## 專案結構
 
 ```text
-scripts/
-  scrapers/
-  analysis/
-  experiments/
-    walkforward_yearly_calibration.py
-  visualization/
-    plot_charts.py
-
-results/performance/
-figures/
-data/
+DCA_Investment_Project/
+├─ data/
+│  ├─ fundamentals/                  # 各市場基本面資料
+│  ├─ taiex_price.csv                # 台股指數價格
+│  ├─ sp500_price.csv                # S&P 500 價格
+│  ├─ nikkei225_price.csv            # 日經 225 價格
+│  └─ ...                            # TWSE 中繼資料/處理結果
+├─ scripts/
+│  ├─ run_analysis.py                # 主流程入口（推薦）
+│  ├─ run_all.py                     # 轉呼叫 scrapers 流程
+│  ├─ analysis/
+│  │  ├─ dca_strategies.py           # 策略邏輯
+│  │  └─ performance_metrics.py      # 績效指標計算
+│  ├─ experiments/
+│  │  └─ walkforward_yearly_calibration.py  # 年度校準與回測核心
+│  ├─ scrapers/                      # 各市場資料抓取與整理
+│  └─ visualization/
+│     └─ plot_charts.py              # 圖表與輸出整理
+├─ results/
+│  ├─ *.csv                          # 各策略輸出結果
+│  └─ performance/                   # 績效摘要、曲線、參數紀錄
+├─ requirements.txt
+└─ run.sh
 ```
 
-## 常用指令
+---
+
+## 資料來源
+
+- **價格資料**：Yahoo Finance（`^TWII`, `^GSPC`, `^N225`）
+- **TAIEX 基本面**：
+  - 優先：TWSE C02001 來源（xlsx 匯入/整理）
+  - 備援：Goodinfo 抓取
+- **S&P500 基本面**：multpl.com
+- **Nikkei225 基本面**：Nikkei Indexes API（失敗時 archives 備援）
+
+> 注意：外部網站版型/API 可能改版，抓取腳本需定期維護。
+
+---
+
+## 策略與評估方法
+
+### 1) Value Averaging
+
+透過每期「目標資產值」與「實際資產值」差距決定投入金額，並設定上下限避免過度投入。
+
+### 2) Threshold DCA
+
+根據估值指標（PE/PB/殖利率）分位數判斷低估/高估區間，動態調整每期投入倍率。
+
+### 3) Model-Driven DCA
+
+將多個估值因子轉換為標準化分數（z-score）後合成訊號，映射到投入倍率範圍。
+
+### Walk-Forward 校準
+
+- 以年度為單位做 expanding calibration。
+- 每年用「起始年到前一年」資料尋找最佳參數，再套用到當年。
+- 目標分數綜合 Sharpe、CAGR 與 Max Drawdown（具體權重見策略校準程式）。
+
+### 主要績效指標
+
+- Total Return
+- CAGR
+- Sharpe Ratio
+- Sortino Ratio
+- Max Drawdown
+
+---
+
+## 快速開始
+
+### Windows (PowerShell)
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python scripts/run_analysis.py
+```
+
+### macOS / Linux
 
 ```bash
-# 只抓資料
-python3 scripts/scrapers/run_all.py
-
-# 只跑 expanding yearly walk-forward（輸出 CSV）
-python3 scripts/experiments/walkforward_yearly_calibration.py
-
-# 產生最新表格 + 圖（內含 walk-forward）
-python3 scripts/visualization/plot_charts.py
-
-# 全流程
-python3 scripts/run_analysis.py
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+bash run.sh
 ```
+
+---
+
+## 執行方式
+
+### 一鍵完整流程（抓資料 + 回測 + 視覺化）
+
+```bash
+python scripts/run_analysis.py
+```
+
+### 僅資料抓取
+
+```bash
+python scripts/scrapers/run_all.py
+```
+
+### 單獨抓取價格資料
+
+```bash
+python scripts/scrapers/fetch_yahoo_prices.py
+```
+
+---
+
+## 輸出結果說明
+
+### `results/`
+
+- 各市場 x 各策略明細 CSV（例如 `TAIEX_value_avg.csv`）
+- 可用於自訂分析、再繪圖或報告附錄
+
+### `results/performance/`
+
+- `performance_summary_*.csv`：策略績效總表
+- `walkforward_expanding_curves.csv`：策略淨值/績效曲線
+- `walkforward_expanding_param_log.csv`：各年度校準參數紀錄
+
+---
+
+## 典型資料流（端到端）
+
+1. `scripts/run_analysis.py` 啟動流程  
+2. `scripts/scrapers/run_all.py` 依序抓取價格與基本面  
+3. `scripts/experiments/walkforward_yearly_calibration.py` 進行年度校準與回測  
+4. `scripts/visualization/plot_charts.py` 匯整結果並輸出 CSV/圖表  
+5. 最終產出寫入 `results/` 與 `results/performance/`
+
+---
+
+## 已知限制
+
+- 尚未建立正式測試框架（`pytest`/CI）。
+- 多數參數以程式內常數設定，彈性不足。
+- 部分資料源依賴網頁爬蟲，對來源站變動敏感。
+- 目前以腳本研究用途為主，尚未 package 化。
+
+---
+
+## 建議改進方向
+
+- 加入 `pytest` 測試（策略輸出 schema、績效計算正確性）。
+- 將參數抽離為 `config`（YAML/JSON）或 CLI 參數。
+- 增加資料品質檢查（缺值率、欄位完整性、日期連續性）。
+- 結果輸出加上 timestamp 版本化，避免覆寫歷史結果。
+- 建立 CI（lint + test）提升可維護性。
+
+---
+
+## 免責與使用聲明
+
+- 本專案為研究與教學用途，不構成投資建議。
+- 回測結果不代表未來績效；實際交易仍需考慮滑價、交易成本、稅費與流動性。
+
