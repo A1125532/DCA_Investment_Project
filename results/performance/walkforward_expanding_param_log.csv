@@ -1,0 +1,190 @@
+Market,Strategy,Year,Train End,Train Score,Train Sharpe,Train CAGR %,Train MaxDD %,Params,Calibration Mode
+TAIEX,Value Averaging,2006,,,,,,"{'min_ratio': 0.3, 'max_mult': 5.0}",default_start_year
+TAIEX,Value Averaging,2007,2006-12-31,4.343761493945383,3.5007674707551075,16.85988046380551,0.0,"{'min_ratio': 0.3, 'max_mult': 2.0}",expanding_from_start
+TAIEX,Value Averaging,2008,2007-12-31,2.9562265300353716,2.6147424962455132,6.829680675797167,0.0,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2009,2008-12-31,1.6109471746855757,2.211671847743379,-10.73222539980101,3.205670153387643,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2010,2009-12-31,2.4324862190643315,2.1903815721679427,7.307388086288524,6.163237870901862,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2011,2010-12-31,2.1349281541903977,1.9284716516380251,7.489043691432307,8.399784100962139,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2012,2011-12-31,1.433172456232339,1.6289788897605968,1.9372075801540545,14.633340626798027,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2013,2012-12-31,1.3855890505654,1.5443399450536317,2.678318360954579,14.633340626798027,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2014,2013-12-31,1.3538496760125807,1.4572144799291082,3.7860401723886605,14.633340626798027,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2015,2014-12-31,1.3010706503799998,1.3722308769546578,3.9830109032032768,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2016,2015-12-31,1.1315520572239417,1.3057163374111196,1.9229298309528797,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2017,2016-12-31,1.1299647013655179,1.2672282651688327,2.6609441586301408,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2018,2017-12-31,1.1472071342481176,1.235292133408941,3.6445154514799682,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2019,2018-12-31,1.0184895343420812,1.1662010690941154,2.451984739655755,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2020,2019-12-31,1.0813001818560084,1.1610998402766834,3.8102222662829366,13.515538586741094,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+TAIEX,Value Averaging,2021,2020-12-31,1.0850398771106995,1.1673986749623675,4.945409174160131,16.48146282798373,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2022,2021-12-31,1.1354650533478672,1.1634355654779935,6.033174888590964,16.48146282798373,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2023,2022-12-31,0.6868241942015504,1.0616234496692465,3.757374022261195,28.133397829037794,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2024,2023-12-31,0.7477193793129154,1.0682209192892655,4.843328332088115,28.133397829037794,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2025,2024-12-31,0.8103404796201089,1.0705937869632112,6.363375947012706,28.921105234686877,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Value Averaging,2026,2025-12-31,0.8561411576454095,1.0715257217971932,7.260750810839078,28.921105234686877,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2006,,,,,,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",default_start_year
+TAIEX,Threshold DCA (3factor),2007,2006-12-31,4.408692574515257,3.6194208115288684,15.785435259727777,0.0,"{'q': 0.2, 'boost': 1.3, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2008,2007-12-31,2.620870048376932,2.438893755290255,7.409951014412597,9.426062881697648,"{'q': 0.2, 'boost': 1.3, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2009,2008-12-31,0.717767348228165,1.8267586113492353,-12.91398757532014,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2010,2009-12-31,1.746398798714392,1.9158837108396125,5.876139444596862,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2011,2010-12-31,1.590574635581056,1.7577318049447588,5.922694299827214,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2012,2011-12-31,1.0824806697757154,1.5313840204296603,0.28777067402236955,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2013,2012-12-31,1.0690397822629207,1.4675647198124984,1.2953389361097134,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2014,2013-12-31,1.071524249519918,1.4162580237604163,2.3711622022912993,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2015,2014-12-31,1.0379997092448396,1.3652110427325583,2.721611017346892,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2016,2015-12-31,0.8696912583593368,1.278466279081979,1.0903372726484228,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2017,2016-12-31,0.8836988531234191,1.2567187782455742,1.805439184658164,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2018,2017-12-31,0.9095083875862564,1.2394114669703333,2.6677760994197275,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2019,2018-12-31,0.78669966583986,1.1709651485222272,1.5805280334539207,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2020,2019-12-31,0.8548444445430343,1.1758941900250977,2.8448427774599994,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2021,2020-12-31,0.8996928747493638,1.164504069697629,3.9696137881359617,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2022,2021-12-31,0.9482662012876975,1.1616644527634852,4.9978726575855115,23.164594217753162,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2023,2022-12-31,0.6874761015103286,1.069782505803308,2.9399661211965578,26.465235517640362,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2024,2023-12-31,0.7479771004463664,1.0774315007817583,3.9970062003483076,26.465235517640362,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2025,2024-12-31,0.8090666602326688,1.0846180202275935,5.075067007157652,26.465235517640362,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Threshold DCA (3factor),2026,2025-12-31,0.8530370032242971,1.0855014982993694,5.936804305554699,26.465235517640362,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+TAIEX,Model-Driven DCA,2006,,,,,,"{'alpha': 0.35, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",default_start_year
+TAIEX,Model-Driven DCA,2007,2006-12-31,4.430583506715598,3.6548829491398904,15.51401115151414,0.0,"{'alpha': 0.25, 'clip_low': 0.7, 'clip_high': 1.3, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2008,2007-12-31,2.689794606345852,2.5252603799454065,6.784011035397142,8.733316268470558,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2009,2008-12-31,0.7070970130982527,1.8411863316923731,-13.069989859145348,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2010,2009-12-31,1.732309293690228,1.9256930415607107,5.744121555327397,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2011,2010-12-31,1.5774152459258959,1.7657192632809129,5.845716165636716,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2012,2011-12-31,1.0687332910253637,1.5375730605852966,0.2350011215384029,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2013,2012-12-31,1.0574149563796613,1.4751973158262843,1.2561493238046006,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2014,2013-12-31,1.0616683543795866,1.425631152591448,2.3325405484998285,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2015,2014-12-31,1.0264739554613564,1.3713109225363576,2.715057171237034,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2016,2015-12-31,0.8558005539344552,1.2812615935160097,1.1025757211059695,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2017,2016-12-31,0.8699084059764001,1.2601947045598072,1.806070541068916,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2018,2017-12-31,0.8956030887506355,1.2425903525477877,2.6720512367940152,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2019,2018-12-31,0.7724247952050024,1.1738048643235584,1.5841951303659396,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2020,2019-12-31,0.8404256517546708,1.178479117717571,2.8507271934790523,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2021,2020-12-31,0.8851232139374291,1.1673103029152907,3.9680547331798266,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2022,2021-12-31,0.9336434295473802,1.1643486504965919,4.997692093752826,24.029491281842645,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2023,2022-12-31,0.6854132440202405,1.0786315659604628,2.9436204630471696,27.01996725462904,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2024,2023-12-31,0.7458347483093508,1.0851739296299328,4.021203275439977,27.01996725462904,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2025,2024-12-31,0.8057347275966298,1.0927182906825854,5.068315640132504,27.01996725462904,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+TAIEX,Model-Driven DCA,2026,2025-12-31,0.8485480134366303,1.0938429313631703,5.902088543320816,27.01996725462904,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Value Averaging,2006,,,,,,"{'min_ratio': 0.3, 'max_mult': 5.0}",default_start_year
+SP500,Value Averaging,2007,2006-12-31,3.944392459990631,3.5011535585456466,8.86477802889969,0.0,"{'min_ratio': 0.0, 'max_mult': 2.0}",expanding_from_start
+SP500,Value Averaging,2008,2007-12-31,2.766018706668537,2.6163320489850306,2.9937331536701306,0.0,"{'min_ratio': 0.3, 'max_mult': 2.0}",expanding_from_start
+SP500,Value Averaging,2009,2008-12-31,1.695038148961848,2.221217929220916,-9.807220705076592,1.7909372502619203,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2010,2009-12-31,2.0834004168486526,2.1141683419166464,0.10101639874489088,1.7909372502619203,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2011,2010-12-31,1.7892520785917638,1.8340405474893131,2.38326430497664,8.19758420731906,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2012,2011-12-31,1.5719487953107734,1.6595051637359515,1.9052745107222435,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2013,2012-12-31,1.5412779846817188,1.550587621136603,3.470209150128123,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2014,2013-12-31,1.6510903802600758,1.5111338595458665,6.455532293509991,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2015,2014-12-31,1.6027282816184616,1.4356517271379643,6.997932968835752,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2016,2015-12-31,1.4622642285555483,1.3451119354941907,5.999447740452957,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2017,2016-12-31,1.422142329785023,1.3030432611380405,6.038383252165458,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2018,2017-12-31,1.4527630312956372,1.2805232200180905,7.10119810477674,9.141004698064517,"{'min_ratio': 0.0, 'max_mult': 3.0}",expanding_from_start
+SP500,Value Averaging,2019,2018-12-31,1.2343554192394766,1.2406483813316997,5.445019589829814,13.927197079185696,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2020,2019-12-31,1.3096544781080548,1.2068956936418764,7.643819201514179,13.97160878047653,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2021,2020-12-31,1.2292561196574694,1.183219657847036,7.940708101581917,17.549947163433124,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2022,2021-12-31,1.2860413216643458,1.184875467240296,9.043295953854248,17.549947163433124,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2023,2022-12-31,0.9460701833248041,1.1172300716264212,6.230152151660606,24.13337479423237,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2024,2023-12-31,0.9901741905173413,1.0856059694422209,7.9991733171259405,24.769522239058826,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2025,2024-12-31,1.0295132335481298,1.086968659449446,8.758700377597206,24.769522239058826,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Value Averaging,2026,2025-12-31,1.039508011360275,1.0784212284131847,9.129544554565339,24.769522239058826,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+SP500,Threshold DCA (3factor),2006,,,,,,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",default_start_year
+SP500,Threshold DCA (3factor),2007,2006-12-31,4.072131185034364,3.648585223855414,8.47091922357901,0.0,"{'q': 0.2, 'boost': 1.3, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2008,2007-12-31,2.546602841897452,2.3978603401878504,3.731054730999972,1.8905117420198574,"{'q': 0.2, 'boost': 1.3, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2009,2008-12-31,0.8659457273131916,1.8285953812497278,-11.498281746938922,19.386778329479494,"{'q': 0.2, 'boost': 1.3, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2010,2009-12-31,1.4958545876890164,1.9009520177639097,-0.3505936571827073,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2011,2010-12-31,1.5341282975597497,1.8115374232714225,2.2031724300817013,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2012,2011-12-31,1.3726330859171214,1.6912165938710182,1.379684785237223,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2013,2012-12-31,1.3771502201116406,1.634675697229674,2.600845401954488,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2014,2013-12-31,1.491126704615397,1.616259968267297,5.2486896712771625,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2015,2014-12-31,1.4390455792436225,1.5519915539575109,5.492435450037392,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2016,2015-12-31,1.2985515549929998,1.4530150641144406,4.662084761886343,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2017,2016-12-31,1.2579894202261337,1.3993401282893418,4.9243407830509955,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2018,2017-12-31,1.2836972483596578,1.3765237753636386,5.8948244042355435,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2019,2018-12-31,1.1419102247434312,1.294081760810132,4.707924222981141,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2020,2019-12-31,1.2101241724097036,1.2970482161038779,6.012874070431673,19.378387360787894,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2021,2020-12-31,1.1975688404746867,1.263812556038695,6.526652087383744,19.628815996659775,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2022,2021-12-31,1.2482337918256479,1.2634639861627492,7.546922511921883,19.628815996659775,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2023,2022-12-31,0.9631250793875483,1.164576037457199,5.590780351524227,24.049498782293096,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2024,2023-12-31,1.003387520870555,1.1630516653013,6.426516624302336,24.049498782293096,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2025,2024-12-31,1.0380188627151534,1.1625687462703191,7.128801841813925,24.049498782293096,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Threshold DCA (3factor),2026,2025-12-31,1.0439330106151965,1.1523762589098279,7.450934547024612,24.049498782293096,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+SP500,Model-Driven DCA,2006,,,,,,"{'alpha': 0.35, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",default_start_year
+SP500,Model-Driven DCA,2007,2006-12-31,3.9967231518479176,3.5556977574689075,8.820507887580199,0.0,"{'alpha': 0.25, 'clip_low': 0.7, 'clip_high': 1.3, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2008,2007-12-31,2.6231942400312445,2.477059728027366,3.358044991055542,1.0883868774449579,"{'alpha': 0.25, 'clip_low': 0.7, 'clip_high': 1.3, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2009,2008-12-31,1.0406373103876265,1.9235912585451052,-11.158494816312082,16.251460367093724,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2010,2009-12-31,1.606934753726473,1.9181061869111637,-0.28123181163247635,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2011,2010-12-31,1.657569759050974,1.8422001559269368,2.2495889145420778,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2012,2011-12-31,1.484914572219739,1.7093201938755518,1.4540844189450786,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2013,2012-12-31,1.4868946118305544,1.651341461977264,2.653259849127143,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2014,2013-12-31,1.6017129298693342,1.6398129769782537,5.180195909882945,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2015,2014-12-31,1.5483869587978256,1.5667369022594149,5.5751979828295495,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2016,2015-12-31,1.4059088389560597,1.4664607384122264,4.731158862938001,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2017,2016-12-31,1.363803812718635,1.4137787657571796,4.94269779129044,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2018,2017-12-31,1.3889262452378177,1.3901655426148642,5.917410904520404,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2019,2018-12-31,1.2464565218321924,1.3055890162925885,4.7595469628534115,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2020,2019-12-31,1.3165632142528723,1.3054606546969219,6.164248043180343,14.855492130153337,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2021,2020-12-31,1.215882681439126,1.28395472438197,6.450707232370001,19.530370228067206,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2022,2021-12-31,1.2647963465833258,1.2837572855998485,7.43292931089643,19.530370228067206,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2023,2022-12-31,0.9798509208385391,1.1840284432067232,5.4517081507857945,23.83814649537369,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2024,2023-12-31,1.0189967068101737,1.1825517575139668,6.264157584073615,23.83814649537369,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2025,2024-12-31,1.0525038443862027,1.1820453068578622,6.944429348716286,23.83814649537369,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+SP500,Model-Driven DCA,2026,2025-12-31,1.057335461219923,1.1717015083766795,7.247937655014347,23.83814649537369,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Value Averaging,2006,,,,,,"{'min_ratio': 0.3, 'max_mult': 5.0}",default_start_year
+Nikkei225,Value Averaging,2007,2006-12-31,3.8537206684914542,3.501153558545647,7.051342198916144,0.0,"{'min_ratio': 0.0, 'max_mult': 2.0}",expanding_from_start
+Nikkei225,Value Averaging,2008,2007-12-31,2.4285108481669537,2.6158693086706806,-3.7471692100745413,0.0,"{'min_ratio': 0.0, 'max_mult': 2.0}",expanding_from_start
+Nikkei225,Value Averaging,2009,2008-12-31,1.430918850026464,2.2025432836772256,-12.043826898670606,8.47165443586157,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2010,2009-12-31,1.7033502893530488,2.033638936961199,-2.8594934228195035,9.365698823358755,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2011,2010-12-31,1.4881648437839023,1.8113346571149351,-2.1495089038567228,10.78471840690983,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2012,2011-12-31,1.2339854550654603,1.6487639595851595,-3.9816827276300537,10.78471840690983,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2013,2012-12-31,1.3585190306544315,1.588108775149618,-0.27790752713979794,10.78471840690983,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2014,2013-12-31,1.6643351837940104,1.6009124452797159,5.582342133049822,10.78471840690983,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2015,2014-12-31,1.5557814133126615,1.5095183812859316,5.503431582012497,11.44542735369475,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2016,2015-12-31,1.4141463692072704,1.4206023453212269,6.083273060657501,15.530981457341571,"{'min_ratio': 0.0, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2017,2016-12-31,1.1442136717117208,1.3470540579487438,5.098844868510821,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2018,2017-12-31,1.1689487412755704,1.3226043246121462,6.082540926519764,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2019,2018-12-31,0.988801503809285,1.2250583796672623,4.4305150760917344,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2020,2019-12-31,1.0128604906977365,1.2077180809644057,5.258500787917897,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2021,2020-12-31,1.0142499588058538,1.1795856298894087,5.848939171580181,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2022,2021-12-31,0.9700113385950893,1.143733782684264,5.681203711467786,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2023,2022-12-31,0.8540150803256386,1.0801767610336719,4.632418979090613,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2024,2023-12-31,0.9162672237909528,1.0873832800406664,5.733331468257008,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2025,2024-12-31,0.938977803734655,1.0813668925842974,6.307870816258432,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Value Averaging,2026,2025-12-31,0.9800536833753166,1.0812156224244722,7.132413812268168,22.889131483128196,"{'min_ratio': 0.3, 'max_mult': 5.0}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2006,,,,,,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",default_start_year
+Nikkei225,Threshold DCA (3factor),2007,2006-12-31,4.045367504280707,3.7349803754533064,6.207742576548014,0.0,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2008,2007-12-31,2.4513606783081063,2.6626691118140453,-4.151130480847542,0.18759547317809466,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2009,2008-12-31,0.7180163404509559,1.9951616440481907,-14.96025270376884,26.456633420439644,"{'q': 0.2, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2010,2009-12-31,1.1960103811380334,1.935042747308698,-4.1979939552374335,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2011,2010-12-31,1.0930480480742562,1.7662792873296065,-2.8819714169311506,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2012,2011-12-31,0.8219397937264012,1.5879878260166207,-4.738307277628529,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2013,2012-12-31,1.0110919436012313,1.5728415527025401,-0.6523388138503172,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2014,2013-12-31,1.3277412056321891,1.6078149716792147,4.981178047235346,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2015,2014-12-31,1.2444271805448055,1.5276593640823342,4.918009697425285,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2016,2015-12-31,1.1790636138351862,1.4579682158497478,5.004561327884627,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2017,2016-12-31,1.0686370998323522,1.3840200528930358,4.274994306962188,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2018,2017-12-31,1.093111421812677,1.3627422766066046,5.190036272297305,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2019,2018-12-31,0.9149074503421635,1.2720086396892925,3.4406295812332788,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2020,2019-12-31,0.9392019583786329,1.259721629354306,4.1722599486623935,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2021,2020-12-31,0.9416896125190044,1.2349232744405527,4.717980129744892,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2022,2021-12-31,0.8972678637747393,1.2002557286692535,4.522896070285576,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2023,2022-12-31,0.7829182481597643,1.1400155799662652,3.4407067320458395,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2024,2023-12-31,0.8441598354110318,1.1469012902694782,4.5278242710069305,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2025,2024-12-31,0.8668657772329305,1.13918351526394,5.136298607555667,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Threshold DCA (3factor),2026,2025-12-31,0.9075815486226857,1.1374329568941102,5.985625202747369,26.456633420439644,"{'q': 0.3, 'boost': 1.5, 'reduce': 0.5}",expanding_from_start
+Nikkei225,Model-Driven DCA,2006,,,,,,"{'alpha': 0.35, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",default_start_year
+Nikkei225,Model-Driven DCA,2007,2006-12-31,4.141942927594352,3.831196096752131,6.214936616844424,0.0,"{'alpha': 0.35, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2008,2007-12-31,2.5036543501706783,2.7298808183787653,-4.26362181534774,0.652268872035001,"{'alpha': 0.45, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2009,2008-12-31,0.718938530501477,2.0105009420338478,-15.132955375869184,26.745732136945577,"{'alpha': 0.25, 'clip_low': 0.5, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2010,2009-12-31,1.1502664476870272,1.9253045437642968,-4.775320424472973,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2011,2010-12-31,1.071747240289015,1.7678991196908034,-3.1975960909633505,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2012,2011-12-31,0.8088507984444853,1.591888563341679,-4.935313800871455,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2013,2012-12-31,0.9994786521216097,1.575926936047079,-0.8035241814369654,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2014,2013-12-31,1.3192014923198114,1.613591336198823,4.837644619492187,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2015,2014-12-31,1.2372994413823517,1.534894834541695,4.773533633885552,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2016,2015-12-31,1.1722760357253323,1.4650144783080097,4.870672645418872,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2017,2016-12-31,1.0628151941162653,1.3914051088968025,4.153643201461676,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2018,2017-12-31,1.0874205770082206,1.3723578921752748,5.026695193731334,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2019,2018-12-31,0.9098603873463937,1.2814309710291125,3.294029823418043,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2020,2019-12-31,0.93481635369232,1.2682771532211474,4.05622550649587,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2021,2020-12-31,0.9376706228794061,1.2431738792477252,4.615376369706037,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2022,2021-12-31,0.8936871638611912,1.2079790463424225,4.439603847447793,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2023,2022-12-31,0.7795791319073724,1.147073646858872,3.3755511980424258,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2024,2023-12-31,0.8403737986207072,1.1542960281119607,4.446996907247347,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2025,2024-12-31,0.8625236786607045,1.1468102107664286,5.039710854957935,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
+Nikkei225,Model-Driven DCA,2026,2025-12-31,0.9023263300824746,1.145385923898825,5.86424962074541,26.813603742681046,"{'alpha': 0.45, 'clip_low': 0.7, 'clip_high': 1.5, 'w_pb': 1.0, 'w_dy': 1.0}",expanding_from_start
